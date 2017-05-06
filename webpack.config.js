@@ -28,7 +28,7 @@ module.exports = {
     plugins:[
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
-            title:'test'
+            title:'Tabs Pugin demo'
         })
     ]
 }
