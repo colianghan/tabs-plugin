@@ -1,0 +1,67 @@
+.tabs-demo{
+    width: 1024px;
+    margin: 40px auto;
+    position: relative;
+    .tabs-container{
+        padding: 10px 10px 0;
+        height: 72px;
+        box-sizing: border-box;
+        margin:0;
+        background: #ccc;
+        li{
+            display: inline-block;
+            padding:20px;
+            cursor: pointer;
+            &.g-p-tabs-cur{
+                background: #fff;
+            }
+        }
+    }
+    .tabs-panels-container{
+        div:first-child{
+            background: red;
+        }
+        div:last-child{
+            background: yellow;
+        }
+        div{
+            height: 500px;
+        }
+    }
+    .net-error,.loading{
+        height: 500px;
+        line-height: 500px;
+        text-align: center;
+        width: 100%;
+        background: #ddd;
+        position: absolute;
+        top:72px;
+        left:0;
+        z-index:1
+    }
+    .loading{
+        &:after{
+            content: "  ";
+            display: inline-block;
+            vertical-align: middle;
+            width: 100px;
+            height: 100px;
+            border:1px solid #ddd;
+            background: #fff;
+            transform-origin: center;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            animation-name: zhuanquan;
+        }
+    }
+
+    @keyframes zhuanquan{
+        0%{
+            transform: rotate(0)
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+}

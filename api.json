@@ -1,0 +1,17 @@
+{
+    "success":true,
+    "data":[
+        {
+            "name":"tabs1",
+            "data":{}, 
+            "url":"/api.json",
+            "current":true
+        },
+        {
+            "name":"tabs2",
+            "data":{}, 
+            "url":"/api1.json", 
+            "current":false
+        }
+    ]
+}
